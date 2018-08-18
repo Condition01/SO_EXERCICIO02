@@ -41,8 +41,7 @@ public class ProcController {
 		
 	}
 	public void mataProcessoWindows(){
-		String infoProcesso = "";
-		infoProcesso = JOptionPane.showInputDialog("Digite o processo que deseja matar");
+		String infoProcesso = JOptionPane.showInputDialog("Digite o processo que deseja matar");
 		String cmdPid = "TASKKILL /PID ";
 		String cmdNome = "TASKKILL /IM ";
 		int pid = 0;
