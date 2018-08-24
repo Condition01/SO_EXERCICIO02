@@ -56,7 +56,7 @@ public class ProcController {
 		}
 		chamaProcesso(buffer.toString());
 	}
-	public void chamaProcesso(String path){
+	public void chamaProcesso(String path){ //chama um processo pra executar utilizando shellscript
 		try {
 			Runtime.getRuntime().exec(path);
 		} catch (IOException e) {
@@ -96,8 +96,7 @@ public class ProcController {
 			Runtime.getRuntime().exec(buffer.toString());
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-	
+		}	
 	}
 	
 }
